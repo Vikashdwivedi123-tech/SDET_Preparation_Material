@@ -1,0 +1,39 @@
+Selenium Interview Questions Basics to Advance - 
+
+- [ ] What is selenium?
+- [ ] What is WebDriver?
+- [ ] Why can't we write WebDriver driver = new WebDriver();
+- [ ] Why do we write: WebDriver driver = new ChromeDriver();
+- [ ] What is diff between  Selenium 3 and Selenium 4?
+- [ ] What are the components of selenium, explain each of them.
+- [ ] What is the architecture of Selenium Grid ? 
+- [ ] Explain the architecture of Selenium.
+- [ ] What are different locators in Selenium?
+- [ ] Explain waits in Selenium.
+- [ ] Diff between Relative and Absolute Xpath ?
+- [ ] Diff between CSS and XPath.
+- [ ] Diff between hard and soft assertion.
+- [ ] Diff between driver.close() and driver.quit().
+- [ ] Diff between driver.get() and driver.navigate().to()
+- [ ] How do you handle windows and tab in selenium 
+- [ ] Diff between getWindowHandle() and getWindowHandles()
+- [ ] Diff between findElement() and findElements().
+- [ ] How do you handle static and dynamic dropdown.
+- [ ] How do you handle alerts.
+- [ ] How do you handle iframe?
+- [ ] Diff between Actions and Action?
+- [ ] How can you perform mouse and keyboard actions.
+- [ ] Diff between build() and perform().
+- [ ] How can you capture the screenshot ?
+- [ ] How will you test broken link on webpage.
+- [ ] How do you check options is selected, enabled or displayed?
+- [ ] What is the diff between getText() and getAttribute() ?
+- [ ] How do you handle dynamic elements?
+- [ ] How do you handle flaky test?
+- [ ] What is JavaScriptExecutor?
+- [ ] How do you scroll a page?
+- [ ] How do you switch back from iframe to main page?
+- [ ] How do you upload a file?
+- [ ] What is StaleElementReferenceException?
+- [ ] What is ElementClickInterceptedException?
+- [ ] What is ElementNotInteractableException?
