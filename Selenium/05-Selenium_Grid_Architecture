@@ -1,0 +1,333 @@
+# Selenium Grid
+
+## What is Selenium Grid?
+
+Selenium Grid is a component of Selenium that allows us to run test cases on multiple browsers, operating systems, and machines simultaneously.
+
+In simple terms:
+
+> **Selenium Grid is used for Parallel Execution and Cross-Browser Testing.**
+
+---
+
+# Why Do We Need Selenium Grid?
+
+Imagine you have 100 test cases.
+
+Without Selenium Grid:
+
+```text id="6t8t4n"
+Test Case 1
+Test Case 2
+Test Case 3
+...
+Test Case 100
+```
+
+Execution happens one after another.
+
+Time Taken:
+
+```text id="7xqzvu"
+100 Minutes
+```
+
+---
+
+Using Selenium Grid:
+
+```text id="s3rlha"
+Machine 1 → Chrome
+Machine 2 → Firefox
+Machine 3 → Edge
+```
+
+Tests run simultaneously.
+
+Time Taken:
+
+```text id="nnj1c6"
+20-30 Minutes
+```
+
+This significantly reduces execution time.
+
+---
+
+# Main Uses of Selenium Grid
+
+## 1. Parallel Execution
+
+Run multiple test cases at the same time.
+
+### Example
+
+```text id="btejl6"
+Login Test
+Search Test
+Checkout Test
+Payment Test
+```
+
+All execute simultaneously.
+
+---
+
+## 2. Cross-Browser Testing
+
+Verify application behavior across different browsers.
+
+### Example
+
+Run the same test on:
+
+* Chrome
+* Firefox
+* Edge
+
+at the same time.
+
+---
+
+## 3. Cross-Platform Testing
+
+Run tests on different operating systems.
+
+### Example
+
+```text id="kxkdtq"
+Windows + Chrome
+
+macOS + Safari
+
+Linux + Firefox
+```
+
+---
+
+# Selenium Grid Architecture
+
+## Selenium Grid 3 Architecture
+
+Grid 3 follows Hub and Node architecture.
+
+### Hub
+
+Hub is the central server.
+
+Responsibilities:
+
+* Receives test requests.
+* Decides where tests should run.
+* Distributes tests to nodes.
+
+Only one Hub exists.
+
+---
+
+### Nodes
+
+Nodes are machines connected to the Hub.
+
+They execute test cases.
+
+A node can contain:
+
+* Chrome
+* Firefox
+* Edge
+
+---
+
+## Architecture Diagram
+
+```text id="cxu1ku"
+            Test Script
+                  |
+                  ↓
+               HUB
+        __________|__________
+       |           |          |
+       ↓           ↓          ↓
+   Node 1      Node 2      Node 3
+   Chrome      Firefox      Edge
+```
+
+---
+
+# Execution Flow
+
+### Step 1
+
+Test script sends request to Hub.
+
+```text id="svkt3t"
+Run on Chrome
+```
+
+---
+
+### Step 2
+
+Hub finds an available node.
+
+---
+
+### Step 3
+
+Hub forwards request to that node.
+
+---
+
+### Step 4
+
+Node executes the test.
+
+---
+
+### Step 5
+
+Results are sent back.
+
+---
+
+# Selenium Grid 4 Architecture
+
+Selenium 4 introduced a distributed architecture.
+
+Internally it contains components like:
+
+* Router
+* Distributor
+* Session Map
+* Nodes
+
+However, for interviews, you can explain it simply as:
+
+```text id="sg8xb7"
+Test Script
+      ↓
+Grid
+      ↓
+Available Node
+      ↓
+Browser
+```
+
+The Grid automatically manages sessions and distributes tests efficiently.
+
+---
+
+# Selenium Grid 3 vs Selenium Grid 4
+
+| Selenium Grid 3                   | Selenium Grid 4           |
+| --------------------------------- | ------------------------- |
+| Hub & Node Architecture           | Distributed Architecture  |
+| Manual Configuration              | Simplified Configuration  |
+| Less Scalable                     | More Scalable             |
+| Less Efficient Session Management | Better Session Management |
+| Older Version                     | Latest Version            |
+
+---
+
+# Advantages of Selenium Grid
+
+## Faster Execution
+
+Parallel execution reduces test execution time.
+
+---
+
+## Cross-Browser Testing
+
+Run the same test on multiple browsers.
+
+---
+
+## Cross-Platform Testing
+
+Run tests on Windows, Linux, and macOS.
+
+---
+
+## Better Resource Utilization
+
+Multiple machines share execution load.
+
+---
+
+## CI/CD Friendly
+
+Works well with Jenkins and automation pipelines.
+
+---
+
+# Disadvantages of Selenium Grid
+
+## Initial Setup Can Be Complex
+
+Especially in distributed environments.
+
+---
+
+## Infrastructure Required
+
+Need multiple machines or containers.
+
+---
+
+## Maintenance Overhead
+
+Nodes and browsers need regular updates.
+
+---
+
+# Interview Questions
+
+## What is Selenium Grid?
+
+Selenium Grid is a Selenium component used for parallel execution and cross-browser testing.
+
+---
+
+## Why do we use Selenium Grid?
+
+To reduce execution time and run tests on multiple browsers and operating systems simultaneously.
+
+---
+
+## What are Hub and Nodes?
+
+### Hub
+
+Central server that receives and distributes test requests.
+
+### Node
+
+Machine that executes the test cases.
+
+---
+
+## How many Hubs can exist in Grid 3?
+
+Typically one Hub manages multiple Nodes.
+
+---
+
+## What is the biggest advantage of Selenium Grid?
+
+Parallel execution.
+
+---
+
+## Can Selenium Grid perform Cross-Browser Testing?
+
+Yes.
+
+The same test can run simultaneously on Chrome, Firefox, Edge, etc.
+
+---
+
+# Interview Answer
+
+**Selenium Grid is a Selenium component used for parallel execution and cross-browser testing. It allows tests to run simultaneously on multiple browsers, operating systems, and machines, significantly reducing execution time. In Grid 3, the architecture consists of a Hub and multiple Nodes, where the Hub distributes test execution requests to available Nodes.**
