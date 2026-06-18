@@ -21,3 +21,4 @@ API Testing Interview Questions -
 - [ ] How do you debug 500 internal server error ?
 - [ ] How do you extract token from response. 
 - [ ] Write code for get, post, put, patch and delete in Rest Assured.
+- [ ] Explain POJO. 
