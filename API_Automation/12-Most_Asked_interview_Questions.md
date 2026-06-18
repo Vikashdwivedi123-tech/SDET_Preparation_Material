@@ -1,0 +1,23 @@
+API Testing Interview Questions - 
+
+- [ ] What is diff between PUT and PATCH ?
+- [ ] What is API Chaining ?
+- [ ] What is diff between 401 and 403 response code. 
+- [ ] What is diff between 500, 501 and 503 response code.
+- [ ] Difference between 502 and 504. 
+- [ ] What is diff between Authentication and Authorization.
+- [ ] What are the type of authentications - basic, bearer token and Oauth 1,2
+- [ ] What is Rest Assured ?
+- [ ] What is diff between path parameters and query parameters
+- [ ] Explain Given, When and then.
+- [ ] How do you extract response?
+- [ ] How do you validate response code and body of the response in rest assured.
+- [ ] How do you add headers.
+- [ ] How do you pass query and path parameters
+- [ ] What is Serialisation? - converting java object into json
+- [ ] What is Deserialisations? - opposite of Serialisation
+- [ ] Diff between Jsonpath() and path()
+- [ ] How do you log request and response.
+- [ ] How do you debug 500 internal server error ?
+- [ ] How do you extract token from response. 
+- [ ] Write code for get, post, put, patch and delete in Rest Assured.
